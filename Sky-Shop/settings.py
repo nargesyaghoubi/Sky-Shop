@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Shop.urls'
+ROOT_URLCONF = 'Sky-Shop.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Shop.wsgi.application'
+WSGI_APPLICATION = 'Sky-Shop.wsgi.application'
 
 
 # Database
