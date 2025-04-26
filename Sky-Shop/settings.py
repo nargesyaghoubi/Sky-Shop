@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'Sky-Shop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'Narges_shopdb.sqlite3',
+        'NAME': BASE_DIR / 'Skyshopdb.sqlite3',
     }
 }
 
