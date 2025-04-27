@@ -3,6 +3,6 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('<h1> shop project </h1>')
+    return render(request, template_name='index.html')
 
 
