@@ -44,22 +44,15 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-{#                         {% if %}#}
-{#                             class="nav-item nav-link active"#}
-{#                         {% else %}#}
-{##}
-{#                            class="nav-item nav-link"#}
-{#                        {% endif %}#}
-
 
                         <a href="{% url 'index' %}" {% if request.path == '/' %} class="nav-item nav-link active" {% else %} class="nav-item nav-link" {% endif %}>Home</a>
                         <a href="{% url 'shop' %}" {% if request.path == '/shop/' %} class="nav-item nav-link active" {% else %} class="nav-item nav-link" {% endif %}>Shop</a>
-                        <a href="detail.html" {% if request.path == '/detail/' %} class="nav-item nav-link active" {% else %} class="nav-item nav-link" {% endif %}>Shop Detail</a>
+                        <a href="{% url 'listings' %}" {% if request.path == '/listings/' %} class="nav-item nav-link active" {% else %} class="nav-item nav-link" {% endif %}>Shop Detail</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages <i
                                     class="fa fa-angle-down mt-1"></i></a>
                             <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                                <a href="cart.html" class="active">Shopping Cart</a>
+                                <a href="{% url 'cart' %}" {% if request.path == '/cart/' %} class="nav-item nav-link"  {% else %} class="nav-item nav-link" {% endif %}>Shopping Cart</a>
                                 <a href="checkout.html" class="dropdown-item">Checkout</a>
                             </div>
                         </div>
