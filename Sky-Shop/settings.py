@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'main.apps.MainConfig',
     'listings.apps.ListingsConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [

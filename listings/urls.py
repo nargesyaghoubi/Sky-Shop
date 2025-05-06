@@ -1,6 +1,7 @@
 from django.urls import path, include
-from .views import listings
+from .views import signup, signin
 
 urlpatterns = [
-    path('', listings, name='listings'),
+    path('signin', signin, name='signin'),
+    path('signup', signup, name='signup'),
 ]
