@@ -15,3 +15,4 @@ def checkout(request):
 def contact(request):
     return render(request, template_name='contact.html')
 
+
