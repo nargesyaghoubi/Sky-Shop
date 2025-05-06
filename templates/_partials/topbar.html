@@ -18,8 +18,10 @@
                         Account
                     </button>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <button class="dropdown-item" type="button">Sign in</button>
-                        <button class="dropdown-item" type="button">Sign up</button>
+{#                        <button class="dropdown-item" type="button">Sign in</button>#}
+{#                        <button class="dropdown-item" type="button">Sign up</button>#}
+                        <a href="{% url 'signin' %}" class="dropdown-item" type="button" > signin</a>
+                        <a href="{% url 'signup' %}" class="dropdown-item" type="button"> signup</a>
                     </div>
                 </div>
                 <div class="btn-group mx-2">
