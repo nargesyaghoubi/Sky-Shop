@@ -1,5 +1,5 @@
 from django.db import models
-#
+
 from django.db import models
 from ckeditor.fields import RichTextField
 
@@ -8,8 +8,9 @@ class Basic(models.Model):
     title = models.CharField(max_length=100, blank=True)
     phone = models.CharField(max_length=20, blank=True)
 
-    search_title = RichTextField(blank=True)
-    search_sentence = RichTextField(blank=True)
+    description = RichTextField(blank=True)
+    information = RichTextField(blank=True)
+
     email = models.EmailField(blank=True)
     x = models.TextField(blank=True)
     facebook = models.TextField(blank=True)
